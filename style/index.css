@@ -8,10 +8,16 @@ body{
   
 }
 
+.card{
+    background-color: transparent;
+}
+
 .main{
     background-image: url(../immagini/sfondo.jpg);
     width: 300vh;
     height:100vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center; /* Centra l'immagine */
