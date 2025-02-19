@@ -1,3 +1,9 @@
 section{
     background-image: url(immagini/sfondo2.jpg);
 }
+.card-title{
+    color :white;
+}
+.card-img-top{
+    padding-top: 15px;
+}
