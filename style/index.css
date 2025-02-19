@@ -2,16 +2,6 @@ body{
     display: flex;
 }
 
-.navbar-vertical{
-   
-  
-  
-}
-
-.card{
-    
-}
-
 .main{
     background-image: url(../immagini/sfondo.jpg);
     width: 300vh;
