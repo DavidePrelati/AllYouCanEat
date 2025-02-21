@@ -14,3 +14,13 @@ body{
      margin: 0; /* Rimuove il margine predefinito del body */
 }
 
+    .nav-link:hover {
+    background-color: grey;
+  }
+  
+  .active {
+    background-color: black; /* Colore di evidenziazione */
+    color: white;
+    border-radius: 5px;
+  }
+

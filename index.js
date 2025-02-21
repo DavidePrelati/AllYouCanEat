@@ -1,4 +1,4 @@
-var id;
+/*var id;
 id=1
 var testo;
 testo = "ehbd aqowo";
@@ -14,12 +14,12 @@ console.log(giorniSettimana[3]);
 var collega = giorniSettimana[2] + giorniSettimana[4]
 console.log(collega);
 
-/*If*/
+If
 if (testo != testo2) {
     console.log(true);
 }
 
-/*Cicli*/
+Cicli
 for (var num=0; num<6; num++){
     console.log(num);
     
@@ -30,6 +30,9 @@ for (let i = 0; i < giorniSettimana.length; i++) {
     const element = giorniSettimana[i];
     console.log(element);
 }
+*/
+
+
 
 
 function caricaFile(fileName) {
@@ -63,7 +66,7 @@ document.getElementById('antipasti_crudi').addEventListener('click', function (e
 
 document.getElementById("nigiri").addEventListener('click', function (event) {
     event.preventDefault()
-     caricaFile("nigiri.html")
+    caricaFile("nigiri.html")
 })
 
 
@@ -86,3 +89,12 @@ document.getElementById('dolci').addEventListener('click', function (event){
     event.preventDefault()
     caricaFile("dolci.html");
 })
+
+function highlightButton(link) {
+    let links = document.querySelectorAll('.nav-link');
+    console.log(links); 
+    links.forEach(function(link) {
+      link.classList.remove('active');
+    });
+    link.classList.add('active');
+  }
