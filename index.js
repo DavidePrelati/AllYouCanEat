@@ -89,12 +89,3 @@ document.getElementById('dolci').addEventListener('click', function (event){
     event.preventDefault()
     caricaFile("dolci.html");
 })
-
-function highlightButton(link) {
-    let links = document.querySelectorAll('.nav-link');
-    console.log(links); 
-    links.forEach(function(link) {
-      link.classList.remove('active');
-    });
-    link.classList.add('active');
-  }
