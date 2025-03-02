@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seleziona Numero di Persone</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style/home_page.css" />
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center mb-4">Seleziona il Numero di Persone</h1>
+        <div id="peopleCarousel" class="carousel slide">
+            <div class="carousel-inner">
+                <div class="carousel-item active ">
+                    <div class="border border-dark p-3 d-inline-block rounded bg-light font-weight-bold">
+                        <h2>1 Persona</h2>
+                        <button class="btn btn-success btn-lg select-people" data-people="1">Seleziona</button>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="border border-dark p-3 d-inline-block rounded bg-light font-weight-bold">
+                        <h2>2 Persona</h2>
+                        <button class="btn btn-success btn-lg select-people" data-people="2">Seleziona</button>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="border border-dark p-3 d-inline-block rounded bg-light font-weight-bold">
+                        <h2>3 Persona</h2>
+                        <button class="btn btn-success btn-lg select-people" data-people="3">Seleziona</button>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="border border-dark p-3 d-inline-block rounded bg-light font-weight-bold">
+                        <h2>4 Persona</h2>
+                        <button class="btn btn-success btn-lg select-people" data-people="4">Seleziona</button>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="border border-dark p-3 d-inline-block rounded bg-light font-weight-bold">
+                        <h2>5 Persona</h2>
+                        <button class="btn btn-success btn-lg select-people" data-people="5">Seleziona</button>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="border border-dark p-3 d-inline-block rounded bg-light font-weight-bold">
+                        <h2>6 Persona</h2>
+                        <button class="btn btn-success btn-lg select-people" data-people="6">Seleziona</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Controlli del Carousel -->
+            <a class="carousel-control-prev" href="#peopleCarousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Precedente</span>
+            </a>
+            <a class="carousel-control-next" href="#peopleCarousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Successivo</span>
+            </a>
+        </div>
+
+        <!-- Bottone per confermare la selezione -->
+        <div class="text-center mt-4">
+            <button id="confirm-selection" class="btn btn-success btn-lg" disabled>Conferma</button>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="home_page.js"></script>
+</body>           

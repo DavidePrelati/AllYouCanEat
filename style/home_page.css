@@ -1,0 +1,20 @@
+.carousel-item {
+    text-align: center;
+    padding: 100px;
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: black;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+}
+.carousel-item {
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+.carousel-item:hover{
+    transform: scale(1.05);
+
+}
+
