@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="style/carrello.css" />
+</head>
+<body>
+    <div class="container mt-5">
+        <h2>Carrello</h2>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Articolo</th>
+                    <th>Prezzo</th>
+                    <th>Azione</th>
+                </tr>
+            </thead>
+            <tbody id="cart-items">
+                <!-- Gli articoli del carrello verranno aggiunti qui dinamicamente -->
+            </tbody>
+        </table>
+        <div class="text-right">
+            <h4>Totale: <span id="cart-total">€0.00</span></h4>
+            <button class="btn btn-success">Checkout</button>
+        </div>
+    </div>
+    
+</body>
+</html>
