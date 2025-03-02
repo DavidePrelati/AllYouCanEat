@@ -1,32 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
-    <link rel="stylesheet" type="text/css" href="style/carrello.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="style/carrello.css" />
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+  <title>Carrello</title>
 </head>
 <body>
-    <div class="container mt-5">
-        <h2>Carrello</h2>
-        <table class="table">
-            <thead>
-                <tr>
-                    <th>Articolo</th>
-                    <th>Prezzo</th>
-                    <th>Azione</th>
-                </tr>
-            </thead>
-            <tbody id="cart-items">
-                <!-- Gli articoli del carrello verranno aggiunti qui dinamicamente -->
-            </tbody>
-        </table>
-        <div class="text-right">
-            <h4>Totale: <span id="cart-total">€0.00</span></h4>
-            <button class="btn btn-success">Checkout</button>
+
+    <div class="overlay"></div>
+    <div class="carrello-container">
+        <h2>Il tuo carrello</h2>
+        <ul id="lista-ordini">
+            <!-- Gli elementi ordinati appariranno qui -->
+        </ul>
+        <div class="text-end">
+            <button onclick="window.history.back()" class="btn btn-secondary">Chiudi</button>
+            <button class="btn btn-primary">Conferma ordine</button>
         </div>
     </div>
-    
-</body>
+
+
+  <script src="javascript/carrello.js"></script>
+  </body>
 </html>
