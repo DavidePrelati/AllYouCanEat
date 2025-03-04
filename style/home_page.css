@@ -18,7 +18,7 @@
 
 }
 body{
-    background-image: url(../sfondo_home.jpeg);
+    background-image: url(../sfondo_home.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -26,4 +26,13 @@ body{
     height: 100vh;
     margin: 0;
     padding: 0;
+}
+h1{
+    color: white;
+}
+#titolo{
+    width: 55%;
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
 }
