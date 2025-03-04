@@ -43,3 +43,9 @@ h1{
     background-color: transparent;
     backdrop-filter: blur(1rem);
 }
+a{
+    color: white;
+}
+a:hover{
+    color: white;
+}
