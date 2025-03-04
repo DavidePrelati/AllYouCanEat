@@ -5,23 +5,21 @@ function displayCart() {
 
     // Se il carrello è vuoto
     if (cart.length === 0) {
-        cartList.innerHTML = '<li>Il tuo carrello è vuoto</li>';
+        cartList.innerHTML = '<p>Il tuo carrello è vuoto</p>';
     } else {
         // Aggiungi ogni prodotto nel carrello
         cartList.innerHTML = cart.map((item, index) => {
             return `
-                <li>
-                    <div class="card px-3 mx-4" style="width: 18rem; background-color: transparent; backdrop-filter: blur(1rem);">
-                        <img src="${item.imageSrc}" class="card-img-top" alt="${item.name}">
-                        <div class="card-body d-flex flex-column">
-                            <h5 class="card-title">${item.name}</h5>
-                            <p>${item.price}€</p>
+                <div class="card px-3 mx-4" style="width: 18rem; background-color: transparent; backdrop-filter: blur(1rem);">
+                    <img src="${item.imageSrc}" class="card-img-top py-2" alt="${item.name}" style="height: 200px; object-fit: cover;">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">${item.name}</h5>
+                        <p>${item.price}€</p>
                             <div class="mt-auto">
-                                <button class="btn btn-secondary mb-4" onclick="removeItem(${index})">Rimuovi</button>
-                            </div>
+                            <button class="btn btn-danger mb-3" onclick="removeItem(${index})">Rimuovi</button>
                         </div>
                     </div>
-                </li>
+                </div>
             `;
         }).join('');
     }
@@ -52,6 +50,6 @@ onload = function() {
     displayCart();
 
     // Aggiungi evento al pulsante "Conferma ordine"
-    const confirmButton = document.querySelector('.btn-primary');
+    const confirmButton = document.querySelector('.btn-success');
     confirmButton.addEventListener('click', confirmOrder);
 };
