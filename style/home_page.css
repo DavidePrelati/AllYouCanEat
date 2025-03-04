@@ -31,8 +31,15 @@ h1{
     color: white;
 }
 #titolo{
-    width: 55%;
+    width: 60%;
+    max-width: 600px;
     display: flex; 
     justify-content: center; 
     align-items: center;
+    position: absolute; 
+    top: 10%;
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    background-color: transparent;
+    backdrop-filter: blur(1rem);
 }
