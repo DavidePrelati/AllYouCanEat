@@ -10,8 +10,8 @@ body {
   overflow-x: hidden;
   background-size: contain;
   background-repeat: no-repeat;
-  background-position: center;/* Centra l'immagine */
-  margin: 0;/* Rimuove il margine predefinito del body */
+  background-position: center; /* Centra l'immagine */
+  margin: 0; /* Rimuove il margine predefinito del body */
 }
 
 .nav-link:hover {
@@ -19,7 +19,7 @@ body {
 }
 
 .active {
-  background-color: black;/* Colore di evidenziazione */
+  background-color: black; /* Colore di evidenziazione */
   color: white;
   border-radius: 5px;
 }
@@ -52,4 +52,43 @@ body {
 
 .carrello-icon:hover {
   background-color: #f8f9fa;
+}
+
+/* Responsività per schermi piccoli */
+@media (max-width: 768px) {
+  /* Navbar per schermi piccoli: mettiamo la navbar sopra l'immagine */
+  .navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Rendi la navbar sopra tutti gli altri elementi */
+  }
+
+  /* L'immagine di sfondo non deve coprire la navbar */
+  .main {
+    margin-top: 70px; /* Aggiungi uno spazio sopra per evitare che l'immagine copra la navbar */
+    background-image: url(../immagini/sfondo.jpg);
+    background-position: center;
+    background-size: cover;
+    height: calc(
+      100vh - 70px
+    ); /* Altezza dell'immagine ridotta per lasciare spazio alla navbar */
+  }
+
+  .navbar-nav {
+    padding-left: 0;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+
+  .navbar-nav .nav-link {
+    font-size: 1.1rem;
+  }
+
+  /* Carrello: icona più piccola sui dispositivi mobili */
+  .carrello-icon {
+    font-size: 3rem;
+    bottom: 15px;
+    right: 15px;
+  }
 }
