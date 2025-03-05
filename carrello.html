@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,20 +8,25 @@
   <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
   <title>Carrello</title>
 </head>
+
 <body>
 
-    <div class="overlay"></div>
-    <div class="carrello-container">
-        <h2>Carrello</h2>
-        <div class="d-flex justify-content-start" id="lista-ordini">
-            <!-- Gli elementi ordinati appariranno qui -->
-        </div>
-        <div class="text-end mt-3">
-            <button onclick="window.history.back()" class="btn btn-secondary">Chiudi</button>
-            <button class="btn btn-success">Conferma ordine</button>
-        </div>
+  <div class="overlay"></div>
+  <div class="carrello-container">
+    <h2>Carrello</h2>
+    <div class="row d-flex justify-content-start" id="lista-ordini">
+      <!-- Gli elementi ordinati appariranno qui -->
     </div>
+    <div class="text-end mt-3 d-flex justify-content-between">
 
-  <script src="javascript/carrello.js"></script>
+      <button class="btn" disabled>Prezzo: </button>
+      <div class="d-flex justify-content-end px-2">
+        <button onclick="window.history.back()" class="btn btn-dark">Chiudi</button>
+        <button class="btn btn-success">Conferma ordine</button>
+      </div>
+    </div>
+  </div>
 </body>
+<script src="javascript/carrello.js"></script>
+
 </html>
