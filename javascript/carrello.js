@@ -7,23 +7,41 @@ function displayCart() {
     if (cart.length === 0) {
         cartList.innerHTML = '<p>Il tuo carrello è vuoto</p>';
     } else {
-        // Aggiungi ogni prodotto nel carrello
-        cartList.innerHTML = cart.map((item, index) => {
-            return `
-                <div class="card px-3 mx-4" style="width: 18rem; background-color: transparent; backdrop-filter: blur(1rem);">
-                    <img src="${item.imageSrc}" class="card-img-top py-2" alt="${item.name}" style="height: 200px; object-fit: cover;">
-                    <div class="card-body d-flex flex-column">
-                        <h5 class="card-title">${item.name}</h5>
-                        <p>${item.price}€</p>
+        // Crea il contenuto del carrello raggruppato ogni 2 card
+        let cartContent = '';
+        for (let i = 0; i < cart.length; i++) {
+            // Ogni due card aggiungi un nuovo contenitore <div class="row">
+            if (i % 2 === 0) {
+                cartContent += '<div class="row">'; // Inizia una nuova riga
+            }
+
+            // Aggiungi la card
+            cartContent += `
+                <div class="col-md-6 py-2">
+                    <div class="card px-3mx-4" style="background-color: transparent; backdrop-filter: blur(1rem);">
+                        <img src="${cart[i].imageSrc}" class="card-img-top py-2" alt="${cart[i].name}" style="height: 200px; object-fit: cover;">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">${cart[i].name}</h5>
+                            <p>${cart[i].price}€</p>
                             <div class="mt-auto">
-                            <button class="btn btn-danger mb-3" onclick="removeItem(${index})">Rimuovi</button>
+                                <button class="btn btn-danger mb-3" onclick="removeItem(${i})">Rimuovi</button>
+                            </div>
                         </div>
                     </div>
                 </div>
             `;
-        }).join('');
+
+            // Chiudi il contenitore della riga ogni 2 card
+            if (i % 2 === 1 || i === cart.length - 1) {
+                cartContent += '</div>'; // Chiude il div della riga
+            }
+        }
+
+        // Imposta il contenuto del carrello
+        cartList.innerHTML = cartContent;
     }
 }
+
 
 // Funzione per rimuovere un articolo dal carrello
 function removeItem(index) {
