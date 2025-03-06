@@ -49,3 +49,22 @@ a{
 a:hover{
     color: white;
 }
+
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.8rem;
+    }
+    .carousel-item .border {
+        width: 100%;
+        max-width: 80%;
+    }
+    .btn-lg {
+        font-size: 1rem;
+        padding: 0.5rem 1.5rem;
+    }
+    #confirm-selection .btn {
+        width: 100%;
+        padding: 1rem;
+    }
+}
