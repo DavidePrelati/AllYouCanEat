@@ -1,4 +1,5 @@
 body {
+  display: flex;
   margin: 0;
   padding: 0;
 }
@@ -9,20 +10,11 @@ body {
   height: 100vh;
   overflow-y: scroll;
   overflow-x: hidden;
-  background-size: cover; /* Cambiato da 'contain' a 'cover' per migliorare l'aspetto */
+  background-size: contain; /* Cambiato da 'contain' a 'cover' per migliorare l'aspetto */
+  background-repeat: no-repeat;
   background-position: center;
-  padding-top: 70px; /* Spazio per la navbar fissa in alto */
-}
-
-/* Navbar: Fissa in alto */
-.navbar {
-  background-image: url(../marmo_bianco.jpg);
-  height: 70px; /* Impostiamo un'altezza fissa per la navbar */
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 1000; /* Per fare in modo che la navbar rimanga sopra gli altri contenuti */
+  /*padding-top: 70px;*/
+  margin: 0; /* Spazio per la navbar fissa in alto */
 }
 
 .nav-link:hover {
@@ -35,8 +27,47 @@ body {
   border-radius: 5px;
 }
 
+.navbar {
+  background-image: url(../marmo_bianco.jpg);
+  width: 100%;
+  height: 100%;
+}
+
+.carrello {
+  position: fixed;
+  bottom: 50px;
+  right: 30px;
+  z-index: 1000;
+}
+
+.carrello-icon {
+  font-size: 5rem;
+  color: #000;
+  background-color: #fff;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  bottom: 15px;
+  right: 15px;
+}
+
 /* Responsività per dispositivi mobili */
 @media (max-width: 768px) {
+  /* Navbar: Fissa in alto */
+  .navbar {
+    background-image: url(../marmo_bianco.jpg);
+    height: 70px; /* Impostiamo un'altezza fissa per la navbar */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Per fare in modo che la navbar rimanga sopra gli altri contenuti */
+  }
+
   .navbar-collapse {
     display: flex;
     justify-content: space-between;

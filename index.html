@@ -1,62 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sandrino's Sushi</title>
-    <link rel="stylesheet" type="text/css" href="style/index.css">
+    <link rel="stylesheet" type="text/css" href="style/index.css" />
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
-</head>
+  </head>
 
-<body>
+  <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">Sandrino's Menù</a>
-                <!-- Bottone per il menu mobile -->
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <!-- Menu a tendina -->
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="bevande.html">Bevande</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="antipasti.html">Antipasti</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="antipasti_crudi.html">Antipasti Crudi</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="nigiri.html">Nigiri</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="hosomaki.html">Hosomaki</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="uramaki.html">Uramaki</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="special.html">Sandrino's Special</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="dolci.html">Dolci</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+      <nav class="navbar navbar-expand-lg navbar-light navbar-vertical">
+        <div class="container-fluid flex-column align-items-start">
+          <a class="navbar-brand" href="#">Sandrino's Menù</a>
+          <!-- Bottone per il menu mobile -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!-- Menu a tendina -->
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto d-flex flex-column">
+              <li class="nav-item py-2">
+                <a class="nav-link" href="bevande.html">Bevande</a>
+              </li>
+              <li class="nav-item py-2">
+                <a class="nav-link" href="antipasti.html">Antipasti</a>
+              </li>
+              <li class="nav-item py-2">
+                <a class="nav-link" href="antipasti_crudi.html"
+                  >Antipasti Crudi</a
+                >
+              </li>
+              <li class="nav-item py-2">
+                <a class="nav-link" href="nigiri.html">Nigiri</a>
+              </li>
+              <li class="nav-item py-2">
+                <a class="nav-link" href="hosomaki.html">Hosomaki</a>
+              </li>
+              <li class="nav-item py-2">
+                <a class="nav-link" href="uramaki.html">Uramaki</a>
+              </li>
+              <li class="nav-item py-2">
+                <a class="nav-link" href="special.html">Sandrino's Special</a>
+              </li>
+              <li class="nav-item py-2">
+                <a class="nav-link" href="dolci.html">Dolci</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </header>
-    
+
     <main class="main" id="main">
-        <!-- Il contenuto principale va qui -->
+      <!-- Il contenuto principale va qui -->
     </main>
-</body>
-<script src="javascript/index.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-<script src="javascript/carrello.js"></script>
+  </body>
+  <script src="javascript/index.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="javascript/carrello.js"></script>
 </html>
