@@ -89,7 +89,7 @@ body {
 @media (max-width: 768px) {
   /* Navbar in modalità mobile */
   .navbar {
-    height: 70px; /* Altezza navbar */
+    height: 100vh; /* Altezza navbar */
     position: fixed;
     top: 0;
     left: 0;
