@@ -63,9 +63,21 @@ function confirmOrder() {
     displayCart();
 }
 
-// Carica e mostra il carrello quando la pagina è pronta
+function displayTotalPrice() {
+    const selection = JSON.parse(localStorage.getItem('peopleSelection')) || { people: 0, price: 0 };
+    const totalPriceElement = document.querySelector('.btn[disabled]');
+
+    if (selection.people > 0) {
+        totalPriceElement.textContent = `Prezzo: ${selection.price}€ (per ${selection.people} persona/e)`;
+    } else {
+        totalPriceElement.textContent = 'Prezzo: 0€';
+    }
+}
+
+// Carica e mostra il prezzo totale quando la pagina è pronta
 onload = function() {
     displayCart();
+    displayTotalPrice();
 
     // Aggiungi evento al pulsante "Conferma ordine"
     const confirmButton = document.querySelector('.btn-success');

@@ -10,10 +10,10 @@ body {
   height: 100vh;
   overflow-y: scroll;
   overflow-x: hidden;
-  background-size: cover; /* Cambiato a 'cover' per adattarsi meglio */
+  background-size: cover; 
   background-repeat: no-repeat;
   background-position: center;
-  margin: 0; /* Spazio per la navbar */
+  margin: 0; 
 }
 
 .nav-link:hover {
@@ -29,35 +29,35 @@ body {
 .navbar {
   background-image: url(../marmo_bianco.jpg);
   width: 100%;
-  height: 100vh; /* Impostiamo l'altezza della navbar a 100vh per prender tutto lo schermo */
+  height: 100vh; 
   position: fixed;
   top: 0;
   left: 0;
   z-index: 1000;
   display: flex;
-  flex-direction: column; /* Organizza la navbar in colonna per schermi mobili */
+  flex-direction: column; 
   align-items: center;
   justify-content: center;
 }
 
 .navbar-collapse {
   display: flex;
-  flex-direction: column; /* I link sono disposti verticalmente */
+  flex-direction: column; 
   align-items: center;
   width: 100%;
-  padding-top: 20px; /* Spazio tra i link e il logo */
+  padding-top: 20px; 
 }
 
 .navbar-nav {
   display: flex;
-  flex-direction: row; /* I link saranno in colonna per schermi più piccoli */
+  flex-direction: row; 
   justify-content: center;
   width: 100%;
   padding: 0;
 }
 
 .navbar-nav .nav-item {
-  margin-bottom: 20px; /* Distanza tra i link */
+  margin-bottom: 20px; 
 }
 
 .navbar-nav .nav-link {
@@ -87,46 +87,44 @@ body {
 
 
 @media (max-width: 768px) {
-  /* Navbar in modalità mobile */
   .navbar {
-    height: 100vh; /* Altezza navbar */
+    height: 100vh; 
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     z-index: 1000;
-    flex-direction: row; /* Navbar orizzontale */
-    justify-content: space-between; /* Allinea il logo e l'hamburger */
+    flex-direction: row; 
+    justify-content: space-between; 
     padding: 0 20px;
   }
 
   .navbar-nav {
     display: flex;
-    flex-direction: row; /* Orizzontale */
+    flex-direction: row; 
   }
 
   .navbar-toggler {
-    display: block; /* Mostra l'icona hamburger */
+    display: block; 
     position: absolute;
     top: 15px;
     left: 20px;
   }
 
   .navbar-collapse {
-    display: none; /* Di default, i link sono nascosti */
+    display: none; 
   }
 
-  /* Quando il menu è aperto, mostra i link orizzontalmente */
   .navbar-collapse.show {
     display: flex;
-    flex-direction: row; /* I link sono orizzontali */
+    flex-direction: row; 
     justify-content: center;
     width: 100%;
-    padding-top: 10px; /* Spazio tra l'hamburger e i link */
+    padding-top: 10px; 
   }
 
   .navbar-nav .nav-item {
-    margin-right: 20px; /* Spazio tra i link */
+    margin-right: 20px; 
   }
 
   .navbar-nav .nav-link {
