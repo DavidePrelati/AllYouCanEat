@@ -10,67 +10,119 @@
 
   <body>
     <header>
-      <nav class="navbar navbar-expand-lg navbar-light navbar-vertical">
+      <nav class="navbar navbar-expand-lg color-white navbar-vertical">
         <div class="container-fluid flex-column align-items-start">
           <a class="navbar-brand" href="#">Sandrino's Menù</a>
-          <!-- Bottone per il menu mobile -->
           <button
             class="navbar-toggler"
             type="button"
             data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
             <span class="navbar-toggler-icon"></span>
           </button>
-          <!-- Menu a tendina -->
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto d-flex flex-column">
-              <li class="nav-item py-2">
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 flex-column w-100">
+              <li class="nav-item">
                 <a
                   class="nav-link"
                   onclick="highlightButton(this)"
-                  id="special"
+                  id="bevande"
                   href="bevande.html"
                   >Bevande</a
                 >
               </li>
-              <li class="nav-item py-2">
-                <a class="nav-link" onclick="highlightButton(this)" id="antipasti" href="antipasti.html">Antipasti</a>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  onclick="highlightButton(this)"
+                  id="antipasti"
+                  href="antipasti.html"
+                  >Antipasti</a
+                >
               </li>
-              <li class="nav-item py-2">
-                <a class="nav-link" onclick="highlightButton(this)" id="antipasti_crudi" href="antipasti_crudi.html"
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  onclick="highlightButton(this)"
+                  id="antipasti_crudi"
+                  href="antipasti_crudi.html"
                   >Antipasti Crudi</a
                 >
               </li>
-              <li class="nav-item py-2">
-                <a class="nav-link" onclick="highlightButton(this)" id="nigiri" href="nigiri.html">Nigiri</a>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  onclick="highlightButton(this)"
+                  id="nigiri"
+                  href="nigiri.html"
+                  >Nigiri</a
+                >
               </li>
-              <li class="nav-item py-2">
-                <a class="nav-link" onclick="highlightButton(this)" id="hosomaki" href="hosomaki.html">Hosomaki</a>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  onclick="highlightButton(this)"
+                  id="hosomaki"
+                  href="hosomaki.html"
+                  >Hosomaki</a
+                >
               </li>
-              <li class="nav-item py-2">
-                <a class="nav-link" onclick="highlightButton(this)" id="uramaki" href="uramaki.html">Uramaki</a>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  onclick="highlightButton(this)"
+                  id="uramaki"
+                  href="uramaki.html"
+                  >Uramaki</a
+                >
               </li>
-              <li class="nav-item py-2">
-                <a class="nav-link" onclick="highlightButton(this)" id="special" href="special.html">Sandrino's Special</a>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  onclick="highlightButton(this)"
+                  id="special"
+                  href="special.html"
+                  >Sandrino's Special</a
+                >
               </li>
-              <li class="nav-item py-2">
-                <a class="nav-link" onclick="highlightButton(this)" id="dolci" href="dolci.html">Dolci</a>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  onclick="highlightButton(this)"
+                  id="dolci"
+                  href="dolci.html"
+                  >Dolci</a
+                >
               </li>
             </ul>
           </div>
         </div>
       </nav>
     </header>
+    <main class="main" id="main"></main>
 
-    <main class="main" id="main">
-      <!-- Il contenuto principale va qui -->
-    </main>
+    <div id="carrello" class="carrello">
+      <a href="carrello.html" class="carrello-icon">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="30"
+          height="30"
+          fill="currentColor"
+          class="bi bi-cart"
+          viewBox="0 0 16 16"
+        >
+          <path
+            d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"
+          />
+        </svg>
+      </a>
+    </div>
   </body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
   <script src="javascript/index.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="javascript/carrello.js"></script>
 </html>
